@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>In ra giá trị trung bình từng phần tử</title>
+</head>
+<body>
+<script type="text/javascript">
+	var mangso =[5,3,20];
+	var lonnhat = 0;
+	var tong = 0;
+	for (var i = 0; i < mangso.length; i++) {
+		tong += mangso[i];
+		if (mangso[i] > lonnhat){
+			lonnhat = mangso[i];	
+		}
+	}	
+	document.write("lớn nhất" + lonnhat + "trung bình là" + (tong/mangso.length));
+</script>
+</body>
+</html>

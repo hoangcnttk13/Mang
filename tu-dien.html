@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="in">
+	<input type="button" onclick="abc()" value="Dịch">
+	<p id="result"></p>
+	<script type="text/javascript">
+		function abc(){
+			var nhapEnglish = document.getElementById("in").value;
+			var tienganh = ["I", "You"];
+			var tiengviet = ["Tôi", "Bạn"];
+			for (var i = 0; i < tienganh.length; i++) {
+				if (nhapEnglish==tienganh[i]){
+					document.getElementById("result").innerHTML= tiengviet[i];
+					break; 
+				} else {
+					document.getElementById("result").innerHTML= "Lỗi";
+				}
+
+			}
+		}
+	</script>
+</body>
+</html>
